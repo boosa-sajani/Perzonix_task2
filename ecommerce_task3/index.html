@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail Experience</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-store"></i> ShopEase
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#">Categories</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-heart"></i>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+    <section class="product-container">
+        <!-- LEFT -->
+        <div class="gallery">
+            <img id="mainImage" class="main-image" src="images/laptop1.jpg" alt="Laptop">
+            <div class="thumbnails" id="thumbnailContainer">
+            </div>
+        </div>
+        <!-- RIGHT -->
+        <div class="details">
+            <h1 id="productName">
+                HP Pavilion Gaming Laptop
+            </h1>
+            <div class="rating">
+                ★★★★★
+                <span>(4.8 / 5)</span>
+            </div>
+            <div class="price-section">
+                <h2 id="price">
+                    ₹55,999
+                </h2>
+                <span class="old-price">
+                ₹68,999
+            </span>
+                <span class="discount">
+                19% OFF
+            </span>
+            </div>
+            <p class="description">
+                Powerful HP Pavilion Gaming Laptop with Intel Core i5, 16GB RAM, 512GB SSD and NVIDIA GTX Graphics. Perfect for students, developers and gamers.
+            </p>
+            <div class="option-box">
+                <label>RAM</label>
+                <div class="options">
+                    <button class="option active">
+                    8 GB
+                </button>
+                    <button class="option">
+                    16 GB
+                </button>
+                    <button class="option">
+                    32 GB
+                </button>
+                </div>
+            </div>
+            <div class="option-box">
+                <label>Storage</label>
+                <div class="options">
+                    <button class="option active">
+                    512 GB SSD
+                </button>
+                    <button class="option">
+                    1 TB SSD
+                </button>
+                </div>
+            </div>
+            <div class="quantity">
+                <label>Quantity</label>
+                <div class="quantity-box">
+                    <button id="minus">-</button>
+                    <input id="qty" type="number" value="1" min="1">
+                    <button id="plus">+</button>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="cartBtn" class="cart-btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to Cart
+            </button>
+                <button id="buyBtn" class="buy-btn">
+                Buy Now
+            </button>
+            </div>
+            <div class="delivery">
+                <p>
+                    <i class="fa-solid fa-truck-fast"></i> Free Delivery
+                </p>
+                <p>
+                    <i class="fa-solid fa-arrow-rotate-left"></i> 7 Days Replacement
+                </p>
+                <p>
+                    <i class="fa-solid fa-shield-halved"></i> 1 Year Warranty
+                </p>
+            </div>
+            <table class="specs">
+                <tr>
+                    <th>Brand</th>
+                    <td>HP</td>
+                </tr>
+                <tr>
+                    <th>Processor</th>
+                    <td>Intel Core i5</td>
+                </tr>
+                <tr>
+                    <th>RAM</th>
+                    <td>16GB</td>
+                </tr>
+                <tr>
+                    <th>Storage</th>
+                    <td>512GB SSD</td>
+                </tr>
+                <tr>
+                    <th>Graphics</th>
+                    <td>NVIDIA GTX</td>
+                </tr>
+                <tr>
+                    <th>Display</th>
+                    <td>15.6" Full HD IPS</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="related">
+        <h2>
+            Related Products
+        </h2>
+        <div class="related-grid" id="relatedGrid"></div>
+    </section>
+    <section id="contact" class="contact-section">
+
+        <h2>Contact Information</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-user"></i>
+
+                <h3>Name</h3>
+
+                <p>BOOSA SAJANI</p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <p>youremail@gmail.com</p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <h3>Phone</h3>
+
+                <p>+91 XXXXXXXXXX</p>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <h3>Location</h3>
+
+                <p>Andhra Pradesh, India</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer>
+        © 2026 ShopEase | Product Detail Experience
+    </footer>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
